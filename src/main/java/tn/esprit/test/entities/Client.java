@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import tn.esprit.test.enums.Gender;
 
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
 
@@ -25,7 +26,7 @@ public class Client {
     private String clNom;
 
     @Column
-    private Date clDateInscription;
+    private LocalDate clDateInscription;
 
     @Enumerated(EnumType.STRING)
     private Gender gender;
