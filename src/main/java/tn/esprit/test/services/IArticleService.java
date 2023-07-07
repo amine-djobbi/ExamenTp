@@ -8,5 +8,7 @@ public interface IArticleService {
     Article ajouterArticleEtFournisseur(Article article);
 
     Article addArticleAndAssignToFournisseur(Article article, String frNom);
+    void affecterArticleAClient(String articleNom,String clNom);
+
 
 }
