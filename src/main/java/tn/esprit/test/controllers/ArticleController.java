@@ -29,5 +29,13 @@ public class ArticleController {
         return addedArticle;
     }
 
+    @PostMapping("/add/{frNom}")
+    public Article addArticleAndAssignToFournisseur(@RequestBody Article article,
+                                                       @PathVariable("frNom") String frNom) {
+        Article addedArticle = articleService.addArticleAndAssignToFournisseur(article, frNom);
+        return addedArticle;
+    }
+
+
 
 }
